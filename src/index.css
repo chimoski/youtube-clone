@@ -94,19 +94,20 @@ a {
 		white-space: nowrap;
 		will-change: transform;
 		animation: marquee 15s linear infinite;
-		width: 400%;
+		width: 3000px;
 		scrollbar-width: none;
 		overflow-x: auto;
+		z-index: 100;
 	}
 	.track:hover {
 		animation-play-state: paused;
 	}
 	@keyframes marquee {
 		from {
-			transform: translateX(0);
+			transform: translateX(10%);
 		}
 		to {
-			transform: translateX(-100%);
+			transform: translateX(-50%);
 		}
 	}
 	.track::-webkit-scrollbar {
